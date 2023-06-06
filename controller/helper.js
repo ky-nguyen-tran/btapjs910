@@ -62,3 +62,5 @@ function ganGiaTriInput(taiKhoan,hoTen,email,matKhau,ngayLam,luong,chucVu,gioLam
 
 
 
+
+

@@ -1,4 +1,5 @@
 let arrayNhanVien = [];
+
 getArrayNhanVien();
 renderTable();
 function renderTable(){
@@ -41,7 +42,7 @@ function renderTable(){
     document.getElementById("tableDanhSach").innerHTML = content
 }
 
-
+console.log(arrayNhanVien)
 
 
 
@@ -99,8 +100,11 @@ document.getElementById("btnCapNhat").onclick = update;
 
 
 
-
-
+function search(){
+    const searchValue = document.getElementById("searchName").value ;
+    arrayNhanVien.filter((nhanVien)=>nhanVien.xepLoai === searchValue)
+}
+document.getElementById("btnTimNV").onclick = search
 
 
 
